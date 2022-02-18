@@ -11,12 +11,20 @@
         <TestDriveStep2
             @getShowRoomList="getShowRoomList"
         />
+        <TestDrivePopup/>
+
+        <TestDrivePrivacy/>
+
+
+
     </div>
 </template>
 <script>
 import TestDriveHead from './Test-drive-head'
 import TestDriveStep1 from './Test-drive-step-1'
 import TestDriveStep2 from './Test-drive-step-2'
+import TestDrivePopup from './Test-drive-popup'
+import TestDrivePrivacy from './Test-drive-privacy'
 
 export default{
     data(){
@@ -29,17 +37,19 @@ export default{
     components:{
         TestDriveHead,
         TestDriveStep1,
-        TestDriveStep2
+        TestDriveStep2,
+        TestDrivePopup,
+        TestDrivePrivacy
     },
     methods:{
         getCarName(carName){
             this.selectedCar = carName.name
-            
+
         },
         getShowRoomList(showRoomList){
-            this.selectedShowRoom =showRoomList.name 
+            this.selectedShowRoom =showRoomList.name
         }
-        
+
     }
 }
 </script>
