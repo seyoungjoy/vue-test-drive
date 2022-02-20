@@ -35,6 +35,7 @@ export default{
         getData(carName){
             this.$emit('getCarName', carName)
             eventBus.$emit('statusOn', 'on')
+            
         },
 
         

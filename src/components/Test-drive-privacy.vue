@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <h1>개인정보 입력 후 시승신청 버튼을 눌러주세요.</h1>
+    <div class="privacy-wrap">
+        <h3>개인정보 입력 후 시승신청 버튼을 눌러주세요.</h3>
         <form>
             <fieldset>
                 <legend>시승신청</legend>
-                <dl>
+                <!-- <dl>
                     <dt>시승희망일</dt>
                     <dd>
                         <select name="month" id="month">
@@ -19,7 +19,7 @@
                             <option value="3">3</option>
                         </select>
                     </dd>
-                </dl>
+                </dl> -->
                 <dl>
                     <dt>
                         <labal>이름</labal>
@@ -61,18 +61,6 @@
                 </dl>
                 <dl>
                     <dt>
-                        <labal>거주지</labal>
-                    </dt>
-                    <dd>
-                        <select>
-                            <option value="부산">부산</option>
-                            <option value="서울">서울</option>
-                            <option value="경기도">경기도</option>
-                        </select>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>
                         <labal>메일</labal>
                     </dt>
                     <dd>
@@ -93,3 +81,44 @@ export default {
 
 }
 </script>
+<style scoped>
+.privacy-wrap{
+    display: none;
+}
+h3{
+    text-align: center;
+    padding:2rem;
+}
+fieldset{
+    width:50vw;
+    margin:0 auto;
+    border-style: none;
+}
+legend{
+    display: none;
+}
+input{
+    outline-style: solid;
+    padding:0.5rem;
+}
+select{
+    outline-style: solid;
+    padding:0.5rem;
+}
+dl{
+    display: flex;
+    align-items: center;
+    margin-bottom:2rem;
+}
+dt{
+    margin-right:1rem;
+}
+button{
+    border-style: solid;
+    padding:1rem;
+}
+
+
+
+
+</style>
